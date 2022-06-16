@@ -106,5 +106,7 @@ app.post("/delete", function(req, res) {
 });
 
 //------------------ Listen on Port 3000 ---------------------------------------
-
-app.listen(process.env.PORT || 3000);
+const port = process.env.PORT || 3000;
+app.listen(port, () =>  {
+  console.info("Aplicacao rodando em", port)
+})
