@@ -1,0 +1,14 @@
+
+<%- include("partials/header"); -%>
+    <h1>A sua história</h1>
+    <form class="" action="/compose" method="post">
+      <div class="form-group">
+        <label>Insira um título</label>
+        <input class="form-control" type="text" name="post_Title"> <br>
+        <label>Sua mensagem</label>
+        <textarea class="form-control" name="post_Body" rows="5" cols="30"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button">Publicar - cuidado em</button>
+    </form>
+
+<%- include("partials/footer"); -%>
