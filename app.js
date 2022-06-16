@@ -111,7 +111,4 @@ if (port == null || port == "") {
   port = 3000;
 }
 
-//set up express server
-app.listen(port, function() {
-  console.log("Servidor rodando em " + port);
-});
+app.listen(process.env.PORT || 3000);
